@@ -1,3 +1,4 @@
 rootProject.name = "Android_SCV"
 include ':app'
 include ':day4'
+include ':day3'
