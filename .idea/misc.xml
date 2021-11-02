@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="Smart Wallpad/src/main/res/layout/activity_cctv.xml" value="0.35520833333333335" />
         <entry key="Smart Wallpad/src/main/res/layout/activity_elevator.xml" value="0.35520833333333335" />
+        <entry key="Smart Wallpad/src/main/res/layout/activity_main.xml" value="0.35520833333333335" />
         <entry key="day4/src/main/res/layout/activity_light.xml" value="0.2625" />
         <entry key="day4/src/main/res/layout/activity_main.xml" value="0.2484375" />
       </map>

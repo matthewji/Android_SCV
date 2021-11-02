@@ -1,39 +1,37 @@
 package com.example.day4
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
+import com.example.day4.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
-        val buttonLight: Button = findViewById(R.id.button_light)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        setContentView(binding.root)
 
-        buttonLight.setOnClickListener {
-            startActivity(Intent(this, LightActivity::class.java))
+        with(binding) {
+            buttonLight.setOnClickListener {
+                startActivity(Intent(this@MainActivity, LightActivity::class.java))
+            }
+            buttonCctv.setOnClickListener {
+                startActivity(Intent(this@MainActivity, CctvActivity::class.java))
+            }
+
+            buttonReset.setOnClickListener {
+                startActivity(Intent(this@MainActivity, DoorActivity::class.java))
+            }
+
+            buttonEv.setOnClickListener {
+                startActivity(Intent(this@MainActivity, ElevatorActivity::class.java))
+            }
         }
-
-        val buttonCctv: Button = findViewById(R.id.button_cctv)
-
-        buttonCctv.setOnClickListener {
-            startActivity(Intent(this, CctvActivity::class.java))
-        }
-
-        val buttonDoor: Button = findViewById(R.id.button_reset)
-
-        buttonDoor.setOnClickListener {
-            startActivity(Intent(this, DoorActivity::class.java))
-        }
-
-        val buttonElevator: Button = findViewById(R.id.button_ev)
-
-        buttonElevator.setOnClickListener {
-            startActivity(Intent(this, ElevatorActivity::class.java))
-        }
-
     }
 }
 
