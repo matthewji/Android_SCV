@@ -18,21 +18,20 @@ class MainActivity : AppCompatActivity() {
 
         val buttonCctv: Button = findViewById(R.id.button_cctv)
 
-        buttonLight.setOnClickListener {
+        buttonCctv.setOnClickListener {
             startActivity(Intent(this, CctvActivity::class.java))
         }
 
         val buttonDoor: Button = findViewById(R.id.button_reset)
 
-        buttonLight.setOnClickListener {
-            startActivity(Intent(this, CctvActivity::class.java))
+        buttonDoor.setOnClickListener {
+            startActivity(Intent(this, DoorActivity::class.java))
         }
 
         val buttonElevator: Button = findViewById(R.id.button_ev)
 
-        buttonLight.setOnClickListener {
-              startActivity(Intent(this, ElevatorActivity::class.java))
-
+        buttonElevator.setOnClickListener {
+            startActivity(Intent(this, ElevatorActivity::class.java))
         }
 
     }
