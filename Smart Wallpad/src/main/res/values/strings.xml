@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">day4</string>
+    <string name="button_light">조명제어</string>
+    <string name="button_cctv">CCTV</string>
+    <string name="button_ev">E/V 호출</string>
+    <string name="button_reset">DOOR</string>
+</resources>

@@ -20,6 +20,13 @@
         </activity>
 
         <activity android:name=".LightActivity" />
+
+        <activity android:name=".DoorActivity" />
+
+        <activity android:name=".CctvActivity" />
+
+        <activity android:name=".ElevatorActivity" />
+
     </application>
 
 </manifest>

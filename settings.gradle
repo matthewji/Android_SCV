@@ -1,5 +1,5 @@
 rootProject.name = "Android_SCV"
 include ':app'
-include ':day4'
+include ':Smart Wallpad'
 include ':day3'
 include ':day3'

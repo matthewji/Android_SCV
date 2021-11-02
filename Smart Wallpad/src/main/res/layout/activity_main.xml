@@ -6,32 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <ImageView
         android:id="@+id/iv_day"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="349dp"
+        android:layout_height="260dp"
         android:src="@drawable/icon_display"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent=".2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias=".1"
+        app:layout_constraintVertical_bias="0.072"
         app:layout_constraintWidth_percent=".8" />
 
     <ImageView
         android:id="@+id/iv_weather"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="300dp"
+        android:layout_height="47dp"
         android:src="@drawable/icon_light2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent=".1"
+        app:layout_constraintHorizontal_bias="0.524"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/iv_day"
-        app:layout_constraintVertical_bias=".1"
+        app:layout_constraintVertical_bias="0.062"
         app:layout_constraintWidth_percent=".8" />
-
 
     <Button
         android:id="@+id/button_light"
@@ -93,8 +94,8 @@
 
     <ImageView
         android:id="@+id/iv_show"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="315dp"
+        android:layout_height="125dp"
         android:src="@drawable/icon_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
